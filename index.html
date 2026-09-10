@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="header"> 
+        <div class="logo"><img src="logo.png" alt="logo"> <b>NOVA</b></div>
+        <div class="nav_bar" id="nav_bar"> 
+           <a href="#features">Features</a>
+           <a href="#pricing">Pricing</a>
+           <a href="#faq">FAQ</a>
+           <a href="">Docs</a>
+        </div>
+        <div class="login">
+           <button class="signup">Sign in</button>
+           <button class="get_start">Get Started</button>
+        </div>
+        <div class="hamburger" onclick="showMenu()">☰</div>
+    </header>
+
+    <div class="heading">
+        <h1 class="head">Build Better. Work Smarter.</h1>
+        <p class="para">The AI Productivity Platform that automates workflows, writes, analyzes, and collaborates - all in one workspace</p>
+        <div class="hero_button">
+            <button class="building">Start building →</button>
+            <button class="demo">Book a Demo</button>
+        </div>
+        <p class="trust">Trusted by 1000+ teams worldwide</p>
+        <div class="cname">
+           <h3>Stripe</h3><h3>Linear</h3><h3>Notion</h3><h3>Vercel</h3><h3>Figma</h3>
+        </div>
+    </div>
+
+    <div class="features" id="features">
+        <h2>Everything you need to ship faster</h2>
+        <p>Powerful AI features to boost productivity</p>
+        <div class="main_features">
+           <div class="imp_features"><b>Smart Drafting</b><p>Generate emails, docs instantly.</p></div>
+           <div class="imp_features"><b>Meeting Notes</b><p>Capture and summarise meetings.</p></div>
+           <div class="imp_features"><b>Task Automation</b><p>Automate repetitive workflows.</p></div>
+           <div class="imp_features"><b>Workflow Insights</b><p>Get clear analytics on productivity.</p></div>
+           <div class="imp_features"><b>Knowledge Search</b><p>Search across docs and Drive.</p></div>
+           <div class="imp_features"><b>Team Collaboration</b><p>Work together in real-time.</p></div>
+           <div class="imp_features"><b>Integrations</b><p>Connect Slack, Notion, Drive 50+ tools.</p></div>
+           <div class="imp_features"><b>Secure Flow</b><p>Enterprise-grade security.</p></div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div><h2>10K+</h2><p>Active Users</p></div>
+        <div><h2>99%</h2><p>Uptime</p></div>
+        <div><h2>500M+</h2><p>Tasks Automated</p></div>
+        <div><h2>4.9/5</h2><p>Rating</p></div>
+    </div>
+
+    <div class="pricing" id="pricing">
+        <h2>Simple, transparent pricing</h2>
+        <p>Choose the plan that fits your team.</p>
+    </div>
+    <div class="pricing_details">
+        <div class="stater">
+            <b>Starter</b><h2>$12/mo</h2><p>For individuals</p>
+            <p>✓ 5k AI credits</p><p>✓ Core AI writing</p><p>✓ 1 workspace</p>
+            <button class="starter_btn">Get Started</button>
+        </div>
+        <div class="stater popular">
+            <p class="badge">Most Popular</p>
+            <b>Pro</b><h2>$29/mo</h2><p>For small teams</p>
+            <p>✓ 50k AI credits</p><p>✓ Advanced workflows</p><p>✓ Up to 10 users</p>
+            <button class="starter_btn">Start free trial</button>
+        </div>
+        <div class="stater">
+            <b>Enterprise</b><h2>$49/mo</h2><p>For growing teams</p>
+            <p>✓ 150k AI credits</p><p>✓ Custom API</p><p>✓ Unlimited workspaces</p>
+            <button class="starter_btn">Contact sales</button>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What our users say</h2>
+        <div class="testi_box">
+            <div class="testi"><p>"NOVA saved us 10 hours per week."</p><b>- Rahul, CEO</b></div>
+            <div class="testi"><p>"Best AI productivity tool ever."</p><b>- Priya, Manager</b></div>
+            <div class="testi"><p>"Our team collaboration is 3x faster."</p><b>- Aman, Developer</b></div>
+        </div>
+    </div>
+
+    <div class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq_item" onclick="openFaq(this)"><b>1. What is NOVA?</b><p class="ans">NOVA is AI productivity platform.</p></div>
+        <div class="faq_item" onclick="openFaq(this)"><b>2. Is there a free trial?</b><p class="ans">Yes, 14 days free trial for Pro plan.</p></div>
+        <div class="faq_item" onclick="openFaq(this)"><b>3. Can I cancel anytime?</b><p class="ans">Yes, you can cancel anytime.</p></div>
+        <div class="faq_item" onclick="openFaq(this)"><b>4. Is my data secure?</b><p class="ans">Yes, enterprise-grade security.</p></div>
+        <div class="faq_item" onclick="openFaq(this)"><b>5. What integrations available?</b><p class="ans">Slack, Notion, Drive and 50+ tools.</p></div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to build better?</h2>
+        <p>Join 10,000+ teams using NOVA today.</p>
+        <button class="building">Get Started Now</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_left">
+            <p><b>NOVA</b> AI Productivity Platform<br>© 2024 NOVA, All rights reserved.</p>
+        </div>
+        <div class="footer_right">
+            <div class="col"><p><b>Product</b><br>Features<br>Pricing<br>Integrations</p></div>
+            <div class="col"><p><b>Resources</b><br>Docs<br>Blog<br>Support</p></div>
+            <div class="col"><p><b>Company</b><br>About<br>Careers<br>Privacy</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
