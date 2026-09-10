@@ -14,6 +14,7 @@ Tagline: Build Better. Work Smarter.
 - JavaScript (Vanilla JS)
 - Flexbox and CSS Grid for layout
 - Media Queries for responsive design
+- To make it responsive i use Gemini AI.
 
 ## Features / Sections Implemented
 - Navigation Bar with Hamburger Menu
